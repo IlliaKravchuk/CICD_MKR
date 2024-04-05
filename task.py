@@ -25,4 +25,7 @@ def main(file_path):
         print("Вказаний файл не знайдено.")
     except Exception as e:
         print(f"Сталася помилка: {e}")
-
+        
+if __name__ == "__main__":
+    file_path = input("Будь ласка, введіть шлях до файлу у форматі(C:\\Users\\i\\Desktop\\example.txt): ")
+    main(file_path)
