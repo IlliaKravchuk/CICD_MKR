@@ -16,4 +16,13 @@ def count_words_and_sentences(file_path):
     word_count = count_words(content)
     sentence_count = count_sentences(content)
     return word_count, sentence_count
+def main(file_path):
+    try:
+        words, sentences = count_words_and_sentences(file_path)
+        print(f"Кількість слів: {words}")
+        print(f"Кількість речень: {sentences}")
+    except FileNotFoundError:
+        print("Вказаний файл не знайдено.")
+    except Exception as e:
+        print(f"Сталася помилка: {e}")
 
