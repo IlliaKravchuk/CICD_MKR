@@ -11,3 +11,9 @@ def count_sentences(content):
         if char in sentence_delimiters:
             sentence_count += 1
     return sentence_count
+def count_words_and_sentences(file_path):
+    content = read_file_content(file_path)
+    word_count = count_words(content)
+    sentence_count = count_sentences(content)
+    return word_count, sentence_count
+
