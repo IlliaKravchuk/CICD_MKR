@@ -4,3 +4,10 @@ def read_file_content(file_path):
     
 def count_words(content):
     return len(content.split())
+def count_sentences(content):
+    sentence_delimiters = ['.', '!', '?', '...']
+    sentence_count = 0
+    for char in content:
+        if char in sentence_delimiters:
+            sentence_count += 1
+    return sentence_count
