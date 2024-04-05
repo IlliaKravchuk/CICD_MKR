@@ -27,5 +27,5 @@ def main(file_path):
         print(f"Сталася помилка: {e}")
         
 if __name__ == "__main__":
-    file_path = input("Будь ласка, введіть шлях до файлу у форматі(C:\\Users\\i\\Desktop\\example.txt): ")
+    file_path = input("Будь ласка, введіть шлях до файлу у форматі(C:\cicd): ")
     main(file_path)
